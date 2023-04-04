@@ -1,6 +1,9 @@
-## FastAPI, SQLAlchemy 2, aio_pika, RabbitMQ boilerplate
+<h2 align="center">:small_red_triangle: FastAPI, SQLAlchemy 2, aio_pika, RabbitMQ boilerplate :small_red_triangle:</h1>
 
-### Features:
+![abstract rectangles colorful with ragged edges per (2)](https://user-images.githubusercontent.com/68655454/229900974-2cd4b9e5-01a4-475a-9df7-f545118e7887.jpg)
+
+
+### :heavy_check_mark: Features:
 
 1. [x] _Project fully async_
 2. [x] _SqlAlchemy async session_
@@ -15,7 +18,7 @@
 11. [x] _PostgreSQL database and asyncpg driver used_
 
 
-### Dependencies:
+### :lock: Dependencies:
 
 ```python
 python = "^3.11"
@@ -26,7 +29,7 @@ sqlalchemy = "^2.0.8"
 asyncpg = "^0.27.0"
 ```
 
-### Setup
+### :checkered_flag: Setup
 
 1. _Install Docker if not installed_
 2. _Rename `.env.dev-example` to `.env.dev`_
@@ -34,7 +37,7 @@ asyncpg = "^0.27.0"
 4. _Open `http://localhost:8000/docs` in your browser_
 
 
-### Tips:
+### :label: Tips:
 
 * Logs you can find by path `src/logs`
 * Also you can run command `docker compose logs` to check logs
