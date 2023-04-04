@@ -12,6 +12,7 @@
 8. [x] _Poetry package manager_
 9. [x] _Used hypercorn_
 10. [x] _Configurated default BaseSettings instance_
+11. [x] _PostgreSQL database and asyncpg driver used_
 
 
 ### Dependencies:
