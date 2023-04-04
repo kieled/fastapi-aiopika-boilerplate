@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "fastapi-boilerplate"
+version = "0.1.0"
+description = ""
+authors = ["Kiel Ed <kieledssh@gmail.com>"]
+readme = "README.md"
+packages = [{include = "fastapi_boilerplate"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.95.0"
+hypercorn = "^0.14.3"
+aio-pika = "^9.0.5"
+sqlalchemy = "^2.0.8"
+asyncpg = "^0.27.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

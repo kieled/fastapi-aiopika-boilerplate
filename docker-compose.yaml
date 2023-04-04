@@ -1,0 +1,57 @@
+version: '3.9'
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: ./src/Dockerfile
+    volumes:
+      - ./src:/app
+    restart: on-failure
+    env_file:
+      - .env.dev
+    ports:
+      - "8000:8000"
+    depends_on:
+      rabbit:
+        condition: service_healthy
+      db:
+        condition: service_started
+
+  consumer:
+    build:
+      context: .
+      dockerfile: ./src/pika/Dockerfile
+    restart: always
+    volumes:
+      - ./src:/app
+    env_file:
+      - .env.dev
+    depends_on:
+      rabbit:
+        condition: service_healthy
+
+  db:
+    image: postgres:15.1-alpine
+    restart: always
+    env_file:
+      - .env.dev
+    volumes:
+      - postgres_data:/var/lib/postgresql/data/
+
+  rabbit:
+    image: rabbitmq:3.11.11-management
+    restart: always
+    env_file:
+      - .env.dev
+    ports:
+      - "15672:15672"
+    healthcheck:
+      test: [ "CMD", "rabbitmqctl", "status" ]
+      interval: 10s
+      timeout: 10s
+      retries: 5
+
+
+volumes:
+  postgres_data:

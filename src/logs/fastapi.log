@@ -1,0 +1,90 @@
+2023-04-04 15:18:55,080 DEBUG Using selector: EpollSelector
+2023-04-04 15:18:55,081 INFO Connecting to the RabbitMQ...
+2023-04-04 15:18:55,081 DEBUG Starting connection factory for <RobustConnection: "amqp://user:******@rabbit:5672/" 0 channels>
+2023-04-04 15:18:55,082 DEBUG Waiting for connection close event for <RobustConnection: "amqp://user:******@rabbit:5672/" 0 channels>
+2023-04-04 15:18:55,082 DEBUG Connection attempt for <RobustConnection: "amqp://user:******@rabbit:5672/" 0 channels>
+2023-04-04 15:18:55,083 DEBUG Connecting to: amqp://user:******@rabbit:5672/
+2023-04-04 15:18:55,095 DEBUG Connection made on <RobustConnection: "amqp://user:******@rabbit:5672/" 0 channels>
+2023-04-04 15:18:55,095 DEBUG Creating AMQP channel for connection: <RobustConnection: "amqp://user:******@rabbit:5672/" 0 channels>
+2023-04-04 15:18:55,096 DEBUG Channel created: <aio_pika.robust_channel.RobustChannel object at 0x7f6ba929dad0>
+2023-04-04 15:18:55,096 DEBUG Prepare to send ChannelFrame(payload=b'\x01\x00\x01\x00\x00\x00\x06\x00\x14\x00\n\x010\xce', should_close=False, drain_future=None)
+2023-04-04 15:18:55,098 DEBUG Received frame <Channel.OpenOk object at 0x7f6ba929fe50> in channel #1 weight=16 on <Connection: "amqp://user:******@rabbit:5672/" at 0x7f6ba9be14f0>
+2023-04-04 15:18:55,099 DEBUG Prepare to send ChannelFrame(payload=b'\x01\x00\x01\x00\x00\x00\x0b\x00<\x00\n\x00\x00\x00\x00\x00\x00\x00\xce', should_close=False, drain_future=None)
+2023-04-04 15:18:55,114 DEBUG Received frame <Basic.QosOk object at 0x7f6ba929c350> in channel #1 weight=12 on <Connection: "amqp://user:******@rabbit:5672/" at 0x7f6ba9be14f0>
+2023-04-04 15:18:55,115 INFO Successfully connected to the RabbitMQ!
+2023-04-04 15:18:55,116 INFO Running on http://0.0.0.0:8000 (CTRL + C to quit)
+2023-04-04 15:18:55,272 DEBUG Using selector: EpollSelector
+2023-04-04 15:18:55,273 INFO Connecting to the RabbitMQ...
+2023-04-04 15:18:55,273 DEBUG Starting connection factory for <RobustConnection: "amqp://user:******@rabbit:5672/" 0 channels>
+2023-04-04 15:18:55,273 DEBUG Waiting for connection close event for <RobustConnection: "amqp://user:******@rabbit:5672/" 0 channels>
+2023-04-04 15:18:55,274 DEBUG Connection attempt for <RobustConnection: "amqp://user:******@rabbit:5672/" 0 channels>
+2023-04-04 15:18:55,274 DEBUG Connecting to: amqp://user:******@rabbit:5672/
+2023-04-04 15:18:55,283 DEBUG Connection made on <RobustConnection: "amqp://user:******@rabbit:5672/" 0 channels>
+2023-04-04 15:18:55,284 DEBUG Creating AMQP channel for connection: <RobustConnection: "amqp://user:******@rabbit:5672/" 0 channels>
+2023-04-04 15:18:55,285 DEBUG Channel created: <aio_pika.robust_channel.RobustChannel object at 0x7fe270ef2410>
+2023-04-04 15:18:55,286 DEBUG Prepare to send ChannelFrame(payload=b'\x01\x00\x01\x00\x00\x00\x06\x00\x14\x00\n\x010\xce', should_close=False, drain_future=None)
+2023-04-04 15:18:55,287 DEBUG Received frame <Channel.OpenOk object at 0x7fe270ef27d0> in channel #1 weight=16 on <Connection: "amqp://user:******@rabbit:5672/" at 0x7fe2710bbde0>
+2023-04-04 15:18:55,288 DEBUG Prepare to send ChannelFrame(payload=b'\x01\x00\x01\x00\x00\x00\x0b\x00<\x00\n\x00\x00\x00\x00\x00\x00\x00\xce', should_close=False, drain_future=None)
+2023-04-04 15:18:55,289 DEBUG Received frame <Basic.QosOk object at 0x7fe270f126d0> in channel #1 weight=12 on <Connection: "amqp://user:******@rabbit:5672/" at 0x7fe2710bbde0>
+2023-04-04 15:18:55,290 INFO Successfully connected to the RabbitMQ!
+2023-04-04 15:18:55,291 INFO Running on http://0.0.0.0:8000 (CTRL + C to quit)
+2023-04-04 15:19:00,097 DEBUG Waiting for connection close event for <RobustConnection: "amqp://user:******@rabbit:5672/" 1 channels>
+2023-04-04 15:19:00,284 DEBUG Waiting for connection close event for <RobustConnection: "amqp://user:******@rabbit:5672/" 1 channels>
+2023-04-04 15:19:25,096 DEBUG Received frame <pamqp.heartbeat.Heartbeat object at 0x7f6ba9468610> in channel #0 weight=8 on <Connection: "amqp://user:******@rabbit:5672/" at 0x7f6ba9be14f0>
+2023-04-04 15:19:25,097 DEBUG Prepare to send ChannelFrame(payload=b'\x08\x00\x00\x00\x00\x00\x00\xce', should_close=False, drain_future=None)
+2023-04-04 15:19:25,284 DEBUG Received frame <pamqp.heartbeat.Heartbeat object at 0x7fe271127a50> in channel #0 weight=8 on <Connection: "amqp://user:******@rabbit:5672/" at 0x7fe2710bbde0>
+2023-04-04 15:19:25,285 DEBUG Prepare to send ChannelFrame(payload=b'\x08\x00\x00\x00\x00\x00\x00\xce', should_close=False, drain_future=None)
+2023-04-04 15:19:55,097 DEBUG Received frame <pamqp.heartbeat.Heartbeat object at 0x7f6ba9602050> in channel #0 weight=8 on <Connection: "amqp://user:******@rabbit:5672/" at 0x7f6ba9be14f0>
+2023-04-04 15:19:55,099 DEBUG Prepare to send ChannelFrame(payload=b'\x08\x00\x00\x00\x00\x00\x00\xce', should_close=False, drain_future=None)
+2023-04-04 15:19:55,285 DEBUG Received frame <pamqp.heartbeat.Heartbeat object at 0x7fe270f11a50> in channel #0 weight=8 on <Connection: "amqp://user:******@rabbit:5672/" at 0x7fe2710bbde0>
+2023-04-04 15:19:55,287 DEBUG Prepare to send ChannelFrame(payload=b'\x08\x00\x00\x00\x00\x00\x00\xce', should_close=False, drain_future=None)
+2023-04-04 15:20:25,098 DEBUG Received frame <pamqp.heartbeat.Heartbeat object at 0x7f6ba9603d50> in channel #0 weight=8 on <Connection: "amqp://user:******@rabbit:5672/" at 0x7f6ba9be14f0>
+2023-04-04 15:20:25,100 DEBUG Prepare to send ChannelFrame(payload=b'\x08\x00\x00\x00\x00\x00\x00\xce', should_close=False, drain_future=None)
+2023-04-04 15:20:25,286 DEBUG Received frame <pamqp.heartbeat.Heartbeat object at 0x7fe271127a50> in channel #0 weight=8 on <Connection: "amqp://user:******@rabbit:5672/" at 0x7fe2710bbde0>
+2023-04-04 15:20:25,289 DEBUG Prepare to send ChannelFrame(payload=b'\x08\x00\x00\x00\x00\x00\x00\xce', should_close=False, drain_future=None)
+2023-04-04 15:20:35,631 DEBUG Prepare to send ChannelFrame(payload=b'\x01\x00\x01\x00\x00\x00\x04\x00Z\x00\n\xce', should_close=False, drain_future=None)
+2023-04-04 15:20:35,632 DEBUG Received frame <Tx.SelectOk object at 0x7fe270f12f10> in channel #1 weight=12 on <Connection: "amqp://user:******@rabbit:5672/" at 0x7fe2710bbde0>
+2023-04-04 15:20:35,633 DEBUG Publishing message with routing key 'test_queue' via exchange <Exchange(): auto_delete=False, durable=False, arguments={})>: Message:{'app_id': None,
+ 'body_size': 56,
+ 'cluster_id': None,
+ 'consumer_tag': None,
+ 'content_encoding': None,
+ 'content_type': None,
+ 'correlation_id': None,
+ 'delivery_mode': <DeliveryMode.NOT_PERSISTENT: 1>,
+ 'delivery_tag': None,
+ 'exchange': None,
+ 'expiration': None,
+ 'headers': {},
+ 'message_id': None,
+ 'priority': 0,
+ 'redelivered': None,
+ 'reply_to': None,
+ 'routing_key': None,
+ 'timestamp': None,
+ 'type': 'None',
+ 'user_id': None}
+2023-04-04 15:20:35,634 DEBUG Prepare to send ChannelFrame(payload=b'\x01\x00\x01\x00\x00\x00\x13\x00<\x00(\x00\x00\x00\ntest_queue\x01\xce\x02\x00\x01\x00\x00\x005\x00<\x00\x00\x00\x00\x00\x00\x00\x00\x0088\x80\x00\x00\x00\x00\x01\x00 60952ae2985545d6ab384190846eb78b\xce\x03\x00\x01\x00\x00\x008{"type": "test_message", "message": "Test message text"}\xce', should_close=False, drain_future=<Future pending cb=[FutureStore.__on_task_done.<locals>.remover() at /usr/local/lib/python3.11/site-packages/aiormq/base.py:33, <1 more>, Task.task_wakeup()]>)
+2023-04-04 15:20:35,635 DEBUG Prepare to send ChannelFrame(payload=b'\x01\x00\x01\x00\x00\x00\x04\x00Z\x00\x14\xce', should_close=False, drain_future=None)
+2023-04-04 15:20:35,636 DEBUG Received frame <Tx.CommitOk object at 0x7fe270f13f50> in channel #1 weight=12 on <Connection: "amqp://user:******@rabbit:5672/" at 0x7fe2710bbde0>
+2023-04-04 15:20:55,099 DEBUG Received frame <pamqp.heartbeat.Heartbeat object at 0x7f6ba9603710> in channel #0 weight=8 on <Connection: "amqp://user:******@rabbit:5672/" at 0x7f6ba9be14f0>
+2023-04-04 15:20:55,102 DEBUG Prepare to send ChannelFrame(payload=b'\x08\x00\x00\x00\x00\x00\x00\xce', should_close=False, drain_future=None)
+2023-04-04 15:20:55,291 DEBUG Prepare to send ChannelFrame(payload=b'\x08\x00\x00\x00\x00\x00\x00\xce', should_close=False, drain_future=None)
+2023-04-04 15:21:03,763 DEBUG Closing channel <aio_pika.robust_channel.RobustChannel object at 0x7fe270ef2410>
+2023-04-04 15:21:03,765 DEBUG Prepare to send ChannelFrame(payload=b'\x01\x00\x01\x00\x00\x00\x0b\x00\x14\x00(\x00\xc8\x00\x00\x00\x00\x00\xce', should_close=False, drain_future=None)
+2023-04-04 15:21:03,766 DEBUG Received frame <Channel.CloseOk object at 0x7fe270f138d0> in channel #1 weight=12 on <Connection: "amqp://user:******@rabbit:5672/" at 0x7fe2710bbde0>
+2023-04-04 15:21:03,768 DEBUG Closing connection <Connection: "amqp://user:******@rabbit:5672/" at 0x7fe2710bbde0> cause: <class 'asyncio.exceptions.CancelledError'>
+2023-04-04 15:21:03,769 DEBUG Sending <Connection.Close object at 0x7fe270ecfa70> to <Connection: "amqp://user:******@rabbit:5672/" at 0x7fe2710bbde0>
+2023-04-04 15:21:03,770 DEBUG Reader exited for <Connection: "amqp://user:******@rabbit:5672/" at 0x7fe2710bbde0>
+2023-04-04 15:21:03,771 DEBUG Writer on connection amqp://user:******@rabbit:5672/ closed
+2023-04-04 15:21:03,772 DEBUG Writer exited for <Connection: "amqp://user:******@rabbit:5672/" at 0x7fe2710bbde0>
+2023-04-04 15:21:03,773 DEBUG Closing connection <Connection: "amqp://user:******@rabbit:5672/" at 0x7fe2710bbde0> cause: CancelledError()
+2023-04-04 15:21:03,784 DEBUG Closing channel <aio_pika.robust_channel.RobustChannel object at 0x7f6ba929dad0>
+2023-04-04 15:21:03,784 DEBUG Prepare to send ChannelFrame(payload=b'\x01\x00\x01\x00\x00\x00\x0b\x00\x14\x00(\x00\xc8\x00\x00\x00\x00\x00\xce', should_close=False, drain_future=None)
+2023-04-04 15:21:03,786 DEBUG Received frame <Channel.CloseOk object at 0x7f6ba9468610> in channel #1 weight=12 on <Connection: "amqp://user:******@rabbit:5672/" at 0x7f6ba9be14f0>
+2023-04-04 15:21:03,788 DEBUG Closing connection <Connection: "amqp://user:******@rabbit:5672/" at 0x7f6ba9be14f0> cause: <class 'asyncio.exceptions.CancelledError'>
+2023-04-04 15:21:03,788 DEBUG Sending <Connection.Close object at 0x7f6ba92776b0> to <Connection: "amqp://user:******@rabbit:5672/" at 0x7f6ba9be14f0>
+2023-04-04 15:21:03,789 DEBUG Reader exited for <Connection: "amqp://user:******@rabbit:5672/" at 0x7f6ba9be14f0>
+2023-04-04 15:21:03,789 DEBUG Writer on connection amqp://user:******@rabbit:5672/ closed
+2023-04-04 15:21:03,789 DEBUG Writer exited for <Connection: "amqp://user:******@rabbit:5672/" at 0x7f6ba9be14f0>
+2023-04-04 15:21:03,790 DEBUG Closing connection <Connection: "amqp://user:******@rabbit:5672/" at 0x7f6ba9be14f0> cause: CancelledError()

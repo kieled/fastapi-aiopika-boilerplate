@@ -1,0 +1,35 @@
+2023-04-04 15:18:51,549 INFO Starting consumer...
+2023-04-04 15:18:51,549 DEBUG Using selector: EpollSelector
+2023-04-04 15:18:51,550 DEBUG Starting connection factory for <RobustConnection: "amqp://user:******@rabbit:5672/" 0 channels>
+2023-04-04 15:18:51,550 DEBUG Waiting for connection close event for <RobustConnection: "amqp://user:******@rabbit:5672/" 0 channels>
+2023-04-04 15:18:51,551 DEBUG Connection attempt for <RobustConnection: "amqp://user:******@rabbit:5672/" 0 channels>
+2023-04-04 15:18:51,551 DEBUG Connecting to: amqp://user:******@rabbit:5672/
+2023-04-04 15:18:51,568 DEBUG Connection made on <RobustConnection: "amqp://user:******@rabbit:5672/" 0 channels>
+2023-04-04 15:18:51,568 DEBUG Creating AMQP channel for connection: <RobustConnection: "amqp://user:******@rabbit:5672/" 0 channels>
+2023-04-04 15:18:51,569 DEBUG Channel created: <aio_pika.robust_channel.RobustChannel object at 0x7f48bdc5d610>
+2023-04-04 15:18:51,569 DEBUG Prepare to send ChannelFrame(payload=b'\x01\x00\x01\x00\x00\x00\x06\x00\x14\x00\n\x010\xce', should_close=False, drain_future=None)
+2023-04-04 15:18:51,570 DEBUG Received frame <Channel.OpenOk object at 0x7f48bc47ba10> in channel #1 weight=16 on <Connection: "amqp://user:******@rabbit:5672/" at 0x7f48bc463890>
+2023-04-04 15:18:51,571 DEBUG Prepare to send ChannelFrame(payload=b'\x01\x00\x01\x00\x00\x00\x05\x00U\x00\n\x00\xce', should_close=False, drain_future=None)
+2023-04-04 15:18:51,571 DEBUG Received frame <Confirm.SelectOk object at 0x7f48bc666f50> in channel #1 weight=12 on <Connection: "amqp://user:******@rabbit:5672/" at 0x7f48bc463890>
+2023-04-04 15:18:51,572 DEBUG Prepare to send ChannelFrame(payload=b'\x01\x00\x01\x00\x00\x00\x0b\x00<\x00\n\x00\x00\x00\x00\x00\x00\x00\xce', should_close=False, drain_future=None)
+2023-04-04 15:18:51,572 DEBUG Received frame <Basic.QosOk object at 0x7f48bc480c10> in channel #1 weight=12 on <Connection: "amqp://user:******@rabbit:5672/" at 0x7f48bc463890>
+2023-04-04 15:18:51,573 DEBUG Prepare to send ChannelFrame(payload=b'\x01\x00\x01\x00\x00\x00\x0b\x00<\x00\n\x00\x00\x00\x00\x00\n\x00\xce', should_close=False, drain_future=None)
+2023-04-04 15:18:51,574 DEBUG Received frame <Basic.QosOk object at 0x7f48bc481190> in channel #1 weight=12 on <Connection: "amqp://user:******@rabbit:5672/" at 0x7f48bc463890>
+2023-04-04 15:18:51,574 DEBUG Declaring queue: <RobustQueue(test_queue): auto_delete=True, durable=False, exclusive=False, arguments=None
+2023-04-04 15:18:51,575 DEBUG Prepare to send ChannelFrame(payload=b'\x01\x00\x01\x00\x00\x00\x16\x002\x00\n\x00\x00\ntest_queue\x08\x00\x00\x00\x00\xce', should_close=False, drain_future=None)
+2023-04-04 15:18:51,578 DEBUG Received frame <Queue.DeclareOk object at 0x7f48bc489d60> in channel #1 weight=31 on <Connection: "amqp://user:******@rabbit:5672/" at 0x7f48bc463890>
+2023-04-04 15:18:51,578 DEBUG Start to consuming queue: <RobustQueue(test_queue): auto_delete=True, durable=False, exclusive=False, arguments=None
+2023-04-04 15:18:51,579 DEBUG Prepare to send ChannelFrame(payload=b'\x01\x00\x01\x00\x00\x00=\x00<\x00\x14\x00\x00\ntest_queue&ctag1.7e7c400a04f944dda8776cf19a93867f\x00\x00\x00\x00\x00\xce', should_close=False, drain_future=None)
+2023-04-04 15:18:51,579 DEBUG Received frame <Basic.ConsumeOk object at 0x7f48bc481110> in channel #1 weight=51 on <Connection: "amqp://user:******@rabbit:5672/" at 0x7f48bc463890>
+2023-04-04 15:18:56,574 DEBUG Waiting for connection close event for <RobustConnection: "amqp://user:******@rabbit:5672/" 1 channels>
+2023-04-04 15:19:21,568 DEBUG Received frame <pamqp.heartbeat.Heartbeat object at 0x7f48bc758a90> in channel #0 weight=8 on <Connection: "amqp://user:******@rabbit:5672/" at 0x7f48bc463890>
+2023-04-04 15:19:21,569 DEBUG Prepare to send ChannelFrame(payload=b'\x08\x00\x00\x00\x00\x00\x00\xce', should_close=False, drain_future=None)
+2023-04-04 15:19:51,569 DEBUG Received frame <pamqp.heartbeat.Heartbeat object at 0x7f48bdc5d510> in channel #0 weight=8 on <Connection: "amqp://user:******@rabbit:5672/" at 0x7f48bc463890>
+2023-04-04 15:19:51,571 DEBUG Prepare to send ChannelFrame(payload=b'\x08\x00\x00\x00\x00\x00\x00\xce', should_close=False, drain_future=None)
+2023-04-04 15:20:21,570 DEBUG Received frame <pamqp.heartbeat.Heartbeat object at 0x7f48bc693410> in channel #0 weight=8 on <Connection: "amqp://user:******@rabbit:5672/" at 0x7f48bc463890>
+2023-04-04 15:20:21,573 DEBUG Prepare to send ChannelFrame(payload=b'\x08\x00\x00\x00\x00\x00\x00\xce', should_close=False, drain_future=None)
+2023-04-04 15:20:35,636 DEBUG Received frame <Basic.Deliver object at 0x7f48bc484410> in channel #1 weight=72 on <Connection: "amqp://user:******@rabbit:5672/" at 0x7f48bc463890>
+2023-04-04 15:20:35,637 DEBUG Received frame <pamqp.header.ContentHeader object at 0x7f48bc690f10> in channel #1 weight=61 on <Connection: "amqp://user:******@rabbit:5672/" at 0x7f48bc463890>
+2023-04-04 15:20:35,637 DEBUG Received frame <pamqp.body.ContentBody object at 0x7f48bc6919d0> in channel #1 weight=64 on <Connection: "amqp://user:******@rabbit:5672/" at 0x7f48bc463890>
+2023-04-04 15:20:35,638 DEBUG Prepare to send ChannelFrame(payload=b'\x01\x00\x01\x00\x00\x00\r\x00<\x00P\x00\x00\x00\x00\x00\x00\x00\x01\x00\xce', should_close=False, drain_future=<Future pending cb=[FutureStore.__on_task_done.<locals>.remover() at /usr/local/lib/python3.11/site-packages/aiormq/base.py:33, <1 more>, Task.task_wakeup()]>)
+2023-04-04 15:20:51,590 DEBUG Prepare to send ChannelFrame(payload=b'\x08\x00\x00\x00\x00\x00\x00\xce', should_close=False, drain_future=None)
